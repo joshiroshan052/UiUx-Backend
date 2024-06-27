@@ -8,7 +8,7 @@ app.use(express.json());
 app.use(cors());
 const io = require("socket.io")(server, {
   cors: {
-    origin: "*",
+    origin: ["https://ui-ux-frontend.vercel.app/"],
     methods: ["GET", "POST"],
   },
 });
